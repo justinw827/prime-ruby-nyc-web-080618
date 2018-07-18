@@ -6,7 +6,7 @@ def prime?(num)
     i = 2
     max = num / 2
     while i < max
-      if num % i == 0 return false end
+      if num % i == 0 then return false end
       max = num / i + 1
       i += 1
     end
