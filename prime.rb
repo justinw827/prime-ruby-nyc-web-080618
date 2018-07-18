@@ -9,5 +9,7 @@ def prime?(num)
       if num % i == 0 return false end
       max = num / i + 1
       i += 1
+    end
+    return true
   end
 end
