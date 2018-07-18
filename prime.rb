@@ -3,12 +3,11 @@ def prime?(num)
   if num <= 1
     return false
   else
-    square = num ** 2
-    (2..square).each do |i|
-      if num % i == 0
-        return false
-      end
-    end
-    return true 
+    i = 2
+    max = num / 2
+    while i < max
+      if num % i == 0 return false end
+      max = num / i + 1
+      i += 1
   end
 end
